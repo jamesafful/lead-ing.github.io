@@ -3,7 +3,4 @@ layout: page
 title: Toolkit
 permalink: /toolkit/
 ---
-
-{% for item in site.toolkit %}
-- [{{ item.title }}]({{ item.url | relative_url }})
-{% endfor %}
+Reusable scripts, checklists, and templates for day‑to‑day leadership.

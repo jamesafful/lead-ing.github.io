@@ -1,11 +1,12 @@
 ---
 layout: home
-title: Leading
+title: Lead‑ing
 ---
+**Lead‑ing** = leading as a continuous practice. Practical leadership for young people. Less theory, more scripts.
 
-Welcome! I write about **engineering leadership**—setting direction, building teams, and shipping sustainably.
+**Start here:** Try a 5‑minute playbook below. New ones drop regularly.
 
 Quick starts:
-- 🧭 [First 90 Days Playbook]({{ "/playbooks/first-90-days/" | relative_url }})
-- 🧑‍🤝‍🧑 [1:1s That Compound]({{ "/toolkit/one-on-ones/" | relative_url }})
-- 📐 [Career Ladders Without Chaos]({{ "/essays/career-ladders/" | relative_url }})
+- 🎯 [Run a 30‑Minute Meeting]({{ "/playbooks/run-a-30-minute-meeting/" | relative_url }})
+- 🤝 [Peer 1:1s That Actually Help]({{ "/toolkit/peer-one-on-ones/" | relative_url }})
+- 💬 [Fix the Free‑Rider (Scripts)]({{ "/scenarios/fix-group-project-free-rider/" | relative_url }})
