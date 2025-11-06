@@ -1,5 +1,7 @@
 ---
-title: "1:1s (For Peers)"
-summary: Why short, structured check‑ins make projects faster and friendlier.
+title: One‑on‑Ones (Manager or Peer)
 ---
-See: [Peer 1:1s That Actually Help]({{ "/toolkit/peer-one-on-ones/" | relative_url }})
+
+**Cadence:** weekly or biweekly.  
+**Agenda:** wins, blockers, growth, feedback both ways, commitments.  
+**Notes template:** date, topics, takeaways, next steps.

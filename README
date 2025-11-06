@@ -1,1 +1,4 @@
 lead-ing.github.io
+
+bundle exec jekyll
+ serve --source docs --baseurl "" --host 0.0.0.0 --livereload

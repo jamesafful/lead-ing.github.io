@@ -1,27 +1,23 @@
-# Lead‑ing — Youth Leadership Playbooks
+# Lead-ing — World‑class Project Site
 
-This is a GitHub Pages site (Jekyll + minima) focused on **practical leadership for young people**.
+This repo publishes a **GitHub Pages _project_ site** at:
+**https://jamesafful.github.io/lead-ing/**
 
-## Structure
-- Site code lives in `docs/`.
-- Collections:
-  - `collections/_playbooks` — step‑by‑step guides
-  - `collections/_scenarios` — tricky peer situations with scripts
-  - `collections/_toolkit` — templates & checklists
-  - `collections/_essays` — big ideas, no jargon
+## Enable GitHub Pages
+1. Repo → **Settings → Pages**
+2. **Source:** Deploy from branch
+3. **Branch:** `main`
+4. **Folder:** `/docs`
+5. Save
 
-## Local dev
+## Local preview (Codespaces or local Ruby)
 ```bash
 bundle install
-bundle exec jekyll serve --source docs --livereload
+bundle exec jekyll serve --source docs --baseurl "/lead-ing" --host 0.0.0.0 --livereload
 ```
 
-## Deploy
-Enable **Pages** → build from GitHub Actions or `main / docs`.
-
-## Options
-- Set `site.plausible_domain` in `_config.yml` to enable Plausible.
-- Add a custom domain under Settings → Pages.
-
-## License
-Content © You. Feel free to keep the structure and replace the words.
+## Structure
+- `docs/_layouts/` — custom layouts (`home.html`, `article.html`)
+- `docs/_includes/` — SEO head, newsletter CTA
+- `docs/collections/` — `/_essays`, `/_playbooks`, `/_toolkit`, `/_scenarios`
+- `docs/assets/` — css, img (logo, social card, favicon)

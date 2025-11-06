@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: article
 title: About
 permalink: /about/
 ---
 
-I'm James Afful. I lead teams that build useful software. This site shares playbooks and tools I wish I had earlier.
-Say hi on GitHub [@jamesafful](https://github.com/jamesafful).
+**Lead‑ing** is for students and early‑career folks who want to learn leadership by **doing**. I’m **James Afful**. I publish hands‑on guides you can run this week.

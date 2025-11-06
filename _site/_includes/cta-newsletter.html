@@ -1,0 +1,12 @@
+<div class="cta-newsletter">
+  <h2 class="cta-title">Get one practical leadership lesson each week</h2>
+  <p class="cta-sub">Short. Applicable. No hype.</p>
+  {% if site.newsletter_action and site.newsletter_action != "" %}
+    <form action="{{ site.newsletter_action }}" method="post" target="_blank" class="cta-form">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  {% else %}
+    <p><a href="{{ '/feed.xml' | relative_url }}">Prefer RSS? Subscribe here.</a></p>
+  {% endif %}
+</div>

@@ -1,6 +1,10 @@
 ---
-layout: page
+layout: article
 title: Toolkit
 permalink: /toolkit/
 ---
-Reusable scripts, checklists, and templates for day‑to‑day leadership.
+Templates, checklists, and rubrics.
+
+{% for item in site.toolkit %}
+- [{{ item.title }}]({{ item.url | relative_url }})
+{% endfor %}

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="article">
+  <header class="article-header">
+    <h1 class="article-title">{{ page.title }}</h1>
+    <div class="article-meta">
+      <span>{{ site.author }}</span> ·
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+    </div>
+  </header>
+
+  <div class="article-body">
+    {{ content }}
+  </div>
+
+  <footer class="article-footer">
+    {% include cta-newsletter.html %}
+  </footer>
+</article>

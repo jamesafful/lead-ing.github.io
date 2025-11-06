@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<div class="hero">
+  <h1>Lead‑ing</h1>
+  <p>Leadership for young people that’s <strong>continuous</strong> (the “‑ing”) and practical.</p>
+  {% include cta-newsletter.html %}
+</div>
+
+<div class="start-here">
+  <h2>Start here</h2>
+  <ul class="card-list">
+    <li><a class="card" href="{{ '/playbooks/first-90-days/' | relative_url }}">🧭 First 90 Days (new role / term)</a></li>
+    <li><a class="card" href="{{ '/toolkit/peer-one-on-ones/' | relative_url }}">🧑‍🤝‍🧑 Peer 1:1s that build trust</a></li>
+    <li><a class="card" href="{{ '/essays/influence-without-title/' | relative_url }}">🧩 Influence without a title</a></li>
+    <li><a class="card" href="{{ '/scenarios/fix-group-project-free-rider/' | relative_url }}">🧪 Fix the group‑project free rider</a></li>
+  </ul>
+</div>
+
+<div class="features">
+  <div>
+    <h3>Featured Essays</h3>
+    <ul>
+      {% assign e = site.essays | slice: 0, 5 %}
+      {% for item in e %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h3>Featured Playbooks</h3>
+    <ul>
+      {% assign p = site.playbooks | slice: 0, 5 %}
+      {% for item in p %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h3>Scenarios</h3>
+    <ul>
+      {% assign s = site.scenarios | slice: 0, 5 %}
+      {% for item in s %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="latest">
+  <h2>Latest Posts</h2>
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

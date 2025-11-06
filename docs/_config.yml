@@ -1,6 +1,7 @@
-title: Lead‑ing
-description: Practical, script-first leadership for teens & 20‑somethings. Less theory, more do‑this‑now.
-url: "https://YOUR-USERNAME.github.io"
+title: Lead-ing
+description: Practical leadership for young people — continuous growth, one playbook at a time.
+author: James Afful
+url: "https://jamesafful.github.io"
 baseurl: "/lead-ing"
 theme: minima
 markdown: kramdown
@@ -10,6 +11,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Collections
 collections:
   essays:
     output: true
@@ -17,25 +19,44 @@ collections:
   playbooks:
     output: true
     permalink: /playbooks/:name/
-  scenarios:
-    output: true
-    permalink: /scenarios/:name/
   toolkit:
     output: true
     permalink: /toolkit/:name/
+  scenarios:
+    output: true
+    permalink: /scenarios/:name/
 
+# Defaults per type
 defaults:
   - scope: { path: "", type: "posts" }
-    values: { layout: post }
+    values: { layout: article }
   - scope: { path: "", type: "essays" }
-    values: { layout: page }
+    values: { layout: article }
   - scope: { path: "", type: "playbooks" }
-    values: { layout: page }
-  - scope: { path: "", type: "scenarios" }
-    values: { layout: page }
+    values: { layout: article }
   - scope: { path: "", type: "toolkit" }
-    values: { layout: page }
+    values: { layout: article }
+  - scope: { path: "", type: "scenarios" }
+    values: { layout: article }
 
-# Minima options
 minima:
   skin: auto
+  header_pages:
+    - index.md
+    - start-here.md
+    - essays/index.md
+    - playbooks/index.md
+    - toolkit/index.md
+    - scenarios/index.md
+    - roadmap.md
+    - curriculum.md
+    - about.md
+  social_links:
+    github: jamesafful
+    rss: rss
+
+# Newsletter (set to your Buttondown action URL or leave blank to show a link)
+newsletter_action: ""
+
+include:
+  - _includes

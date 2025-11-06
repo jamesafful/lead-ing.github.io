@@ -1,6 +1,10 @@
 ---
-layout: page
+layout: article
 title: Playbooks
 permalink: /playbooks/
 ---
-Short, step‑by‑step guides you can use this week. Each ends with a **Try this today** challenge.
+Step‑by‑step guides you can run this week.
+
+{% for item in site.playbooks %}
+- [{{ item.title }}]({{ item.url | relative_url }})
+{% endfor %}

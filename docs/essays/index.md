@@ -1,6 +1,10 @@
 ---
-layout: page
+layout: article
 title: Essays
 permalink: /essays/
 ---
-Big ideas in youth leadership—clear, no‑jargon explainers.
+Big ideas, no jargon.
+
+{% for item in site.essays %}
+- [{{ item.title }}]({{ item.url | relative_url }})
+{% endfor %}

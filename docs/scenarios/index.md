@@ -1,6 +1,10 @@
 ---
-layout: page
+layout: article
 title: Scenarios
 permalink: /scenarios/
 ---
-Sticky moments with peers—exact words to say, and how to say them.
+Scripts for tricky peer situations.
+
+{% for item in site.scenarios %}
+- [{{ item.title }}]({{ item.url | relative_url }})
+{% endfor %}
