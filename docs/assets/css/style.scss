@@ -1,0 +1,14 @@
+---
+---
+
+@import "minima";
+
+.site-title::before {
+  content: "";
+  display: inline-block;
+  width: 20px; height: 20px;
+  background: url('{{ "/assets/logo.svg" | relative_url }}') no-repeat center/contain;
+  margin-right: 8px; vertical-align: -4px;
+}
+
+h1, h2, .post-title { letter-spacing: -0.01em; }

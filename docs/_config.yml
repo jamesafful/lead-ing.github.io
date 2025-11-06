@@ -1,0 +1,39 @@
+title: Leading
+description: Practical essays, playbooks, and tools for engineering leadership.
+url: "https://jamesafful.github.io"
+baseurl: "/lead-ing"
+theme: minima
+markdown: kramdown
+timezone: UTC
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections
+collections:
+  essays:
+    output: true
+    permalink: /essays/:name/
+  playbooks:
+    output: true
+    permalink: /playbooks/:name/
+  toolkit:
+    output: true
+    permalink: /toolkit/:name/
+
+# Defaults
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: post }
+  - scope: { path: "", type: "essays" }
+    values: { layout: page }
+  - scope: { path: "", type: "playbooks" }
+    values: { layout: page }
+  - scope: { path: "", type: "toolkit" }
+    values: { layout: page }
+
+# Minima options
+minima:
+  skin: auto
